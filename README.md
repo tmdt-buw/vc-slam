@@ -60,6 +60,10 @@ All of these models were manually created, using PLASMA and serve as reference m
 * XXXX.rdf: a detailed version of the model enriched with descriptions of concepts and relations
 * XXXX_flat.rdf: a minimal version of the model using only the rdf resources from the ontolgy
 
+
+![Overview](overview.png)
+
+
 ## Statistics
 The statistics folder of this repository contains some additional statistics on the VC-SLAM corpus
 
