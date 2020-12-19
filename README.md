@@ -18,7 +18,7 @@ The ontology is available in two versions, both in the rdf/xml format that can b
 * target_ontology_nonflat.rdf: a enriched version of the ontology, having additional descriptions
 * upper_ontology_plasma.rdf: an additional upper level ontology for usage with [PLASMA](https://github.com/tmdt-buw/plasma)
 
-For each of the 101 data setsone file exists in the following folders, having the data set id as prefix:
+For each of the 101 data sets one file exists in the following folders, having the data set id as prefix:
 
 ### rawdata_csv
 
@@ -31,18 +31,18 @@ This folder contains json/geojson files that were acquired from the data portals
 
 ### json_sample_small
 
-This folder contains small samples of the json files containing maximumg three data points per data source. These samples were used to explore the original data schema using PLASMA.
+This folder contains small samples of the json files containing maximum three data points per data source. These samples were used to explore the original data schema using PLASMA.
 
 ### descriptions
 
-This folder contains text files describing the data set description as well as explanations of the included attributes. Texts and descriptions were copied directly from the data portal websites and thus are unstructured 
+This folder contains text files including the data set description as well as explanations of the included attributes. Texts and descriptions were copied directly from the data portal websites and thus are unstructured. 
 
 ### mappings
 
 This folder contains json files describing the mapping between raw data source and target ontology. Each json file contains a list of mappings for the respective data sets, each coming with the following attributes:
 
 * originalLabel: the attribute name in the json samples
-* path: the list of nodes from root to the attribute node, if data is nested, otherwise empty-
+* path: the list of nodes from root to the attribute node, if data is nested, otherwise empty
 * conceptResource: the mapped concept from the ontology
 * concept: the plasma internal URI for the concept
 * conceptId: the plasma internal identifier for the concept
@@ -53,7 +53,8 @@ This folder contains json files including a list of the attributes that were not
 
 ### semantic_models
 
-This folder contains the semantic model as rdf/xml files, describing concepts and relations in the model
+This folder contains the semantic models as rdf/xml files, describing concepts and relations in the model.
+All of these models were manually created, using PLASMA and serve as reference models.
 
 * XXXX.rdf: a detailed version of the model enriched with descriptions of concepts and relations
 * XXXX_flat.rdf: a minimal version of the model using only the rdf resources from the ontolgy
@@ -61,11 +62,11 @@ This folder contains the semantic model as rdf/xml files, describing concepts an
 ## Statistics
 The statistics folder of this repository contains some additional statistics on the VC-SLAM corpus
 
-* single_datasets: A breakdown of all datasets and their associated semantic models and metadata. This amount and types of used concepts and relations, original date set characteristics and meta data characteristics.
+* single_datasets: A breakdown of all datasets and their associated semantic models and metadata. This amount and types of used concepts and relations, original data set characteristics and meta data characteristics.
 * all_datasets: A statistical summary of single_dataset.xlsx
 * similarity_matrix: a matrix showing the number of all shared concepts between all models
 * concept_usage: All concepts from the ontology, their usage frequency, and mapped original labels
-* relation:usage: All relations from the ontology and their usage frequency
+* relation_usage: All relations from the ontology and their usage frequency
 
 ## Additional Material
 
