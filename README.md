@@ -8,7 +8,7 @@ This section describes the structure of the VC-SLAM corpus
 
 ### Overview
 
-To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/4355563) and download the zip archive.
+To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/4361685) and download the zip archive.
 
 The corpus consists of 101 data sets and a target ontology.
 A closer description of the 101 data sets, their background and their license can be found in DataSetOverview.xlsx.
