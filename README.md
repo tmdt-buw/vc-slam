@@ -1,6 +1,7 @@
 # VC-SLAM - Versatile Corpus for Semantic Labeling And Modeling
 
 The VC-SLAM corpus is a benchmark corpus for semantic labeling and modeling.
+It consists of 101 data sets including schema, labels, raw data and descriptions as well as manually created semantic models.
 
 ## The Corpus
 
