@@ -9,15 +9,15 @@ This section describes the structure of the VC-SLAM corpus
 
 ### Overview
 
-To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/4361685) and download the zip archive.
+To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/4966092) and download the zip archive.
 
 The corpus consists of 101 data sets and a target ontology.
 A closer description of the 101 data sets, their background and their license can be found in DataSetOverview.xlsx.
 
-The ontology is available in two versions, both in the rdf/xml format that can be found in the ontology folder:
-* target_ontology_flat.rdf: a minimal version of the target ontology
-* target_ontology_nonflat.rdf: a enriched version of the ontology, having additional descriptions
-* upper_ontology_plasma.rdf: an additional upper level ontology for usage with [PLASMA](https://github.com/tmdt-buw/plasma)
+The ontology is available in two versions, both in the rdf/turtle format that can be found in the ontology folder:
+* ontology.ttl: a basic version of the target ontology
+* ontology_dist.ttl: a version of the ontology with distinct object properties
+* upper_ontology_plasma.ttl: an additional upper level ontology for usage with [PLASMA](https://github.com/tmdt-buw/plasma)
 
 For each of the 101 data sets one file exists in the following folders, having the data set id as prefix:
 
@@ -26,6 +26,10 @@ For each of the 101 data sets one file exists in the following folders, having t
 This folder contains the raw data sets in CSV format as they were acquired from the open data portals.
 Only these files will include the maximum number of available data points for each data set.
 
+### rawdata_csv_samples
+
+This folder contains a reduced version of each data set from rawdata_csv
+
 ### json_sample_large
 
 This folder contains json/geojson files that were acquired from the data portals additionally to the CSV files or parsed from the CSV files.
@@ -33,6 +37,10 @@ This folder contains json/geojson files that were acquired from the data portals
 ### json_sample_small
 
 This folder contains small samples of the json files containing maximum three data points per data source. These samples were used to explore the original data schema using PLASMA.
+
+### csv_json_mappings
+
+This folder contains json files containing the mapping of attribute names from csv files to json files as some attributes / headers can differ in their name.
 
 ### descriptions
 
@@ -54,11 +62,11 @@ This folder contains json files including a list of the attributes that were not
 
 ### semantic_models
 
-This folder contains the semantic models as rdf/xml files, describing concepts and relations in the model.
+This folder contains the semantic models as rdf/turtle files, describing concepts and relations in the model.
 All of these models were manually created, using PLASMA and serve as reference models.
 
-* XXXX.rdf: a detailed version of the model enriched with descriptions of concepts and relations
-* XXXX_flat.rdf: a minimal version of the model using only the rdf resources from the ontolgy
+* XXXX.ttl: a detailed version of the model enriched with descriptions of concepts and relations
+* XXXX_flat.ttl: a minimal version of the model using only the rdf resources from the ontolgy
 
 
 ![Overview](overview.png)
