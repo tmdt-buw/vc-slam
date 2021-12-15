@@ -9,7 +9,7 @@ This section describes the structure of the VC-SLAM corpus
 
 ### Overview
 
-To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/4966092) and download the zip archive.
+To download the actual corpus, please access our [Zenodo repository](https://zenodo.org/record/5782764) and download the zip archive.
 
 The corpus consists of 101 data sets and a target ontology.
 A closer description of the 101 data sets, their background and their license can be found in DataSetOverview.xlsx.
@@ -17,7 +17,6 @@ A closer description of the 101 data sets, their background and their license ca
 The ontology is available in two versions, both in the rdf/turtle format that can be found in the ontology folder:
 * ontology.ttl: a basic version of the target ontology
 * ontology_dist.ttl: a version of the ontology with distinct object properties
-* upper_ontology_plasma.ttl: an additional upper level ontology for usage with [PLASMA](https://github.com/tmdt-buw/plasma)
 
 For each of the 101 data sets one file exists in the following folders, having the data set id as prefix:
 
@@ -52,9 +51,7 @@ This folder contains json files describing the mapping between raw data source a
 
 * originalLabel: the attribute name in the json samples
 * path: the list of nodes from root to the attribute node, if data is nested, otherwise empty
-* conceptResource: the mapped concept from the ontology
-* concept: the plasma internal URI for the concept
-* conceptId: the plasma internal identifier for the concept
+* concept: the vcslam internal URI for the concept as it can be found in the semantic model
 
 ### ignored_attributes
 
@@ -66,8 +63,6 @@ This folder contains the semantic models as rdf/turtle files, describing concept
 All of these models were manually created, using PLASMA and serve as reference models.
 
 * XXXX.ttl: a detailed version of the model enriched with descriptions of concepts and relations
-* XXXX_flat.ttl: a minimal version of the model using only the rdf resources from the ontolgy
-
 
 ![Overview](overview.png)
 
